@@ -1,0 +1,387 @@
+
+/* insert custom fonts here */
+@font-face {
+    font-family: Geforce;
+    src: url(../fonts/geforce-bold.ttf); /* put the link here*/
+}
+/* responsive features (warning ! do not mess with them if you don't understand what they mean) */
+@media (max-width: 1000px)
+{
+    .fixed-top
+    {
+    	position: relative;
+    	top: auto;
+		background-color: black !important;
+    }
+	.Titles {
+		font-size: 50px !important;
+	}
+	.header-overlay h2{
+		font-size: 1rem;
+	}
+	.slider-for {
+		display: none;
+	}
+	.section h1{
+		font-size: 20px;
+	}
+	.section p,.specifications-text p {
+		font-size: 10px;
+	}
+	.section h4 {
+		font-size: 15px;
+	}
+	.buy-option button,.buy-option h3 {
+		height: 50%;
+		margin-left: 9px;
+	}
+}
+@media (min-width:2100px){
+	.Titles {
+		font-size: 130px !important;
+	}
+	.header-overlay h2{
+		font-size: 90px;
+	}
+	.section h1{
+		font-size: 70px;
+	}
+	.section p,.specifications-text p {
+		font-size: 40px;
+	}
+	.section h4 {
+		font-size: 60px;
+	}
+}
+@media (min-width:2900px){
+	.Titles {
+		font-size: 250px !important;
+	}
+	.header-overlay h2{
+		font-size: 90px;
+	}
+	.section h1{
+		font-size: 100px;
+	}
+	.section p,.specifications-text p {
+		font-size: 70px;
+	}
+	.section h4 {
+		font-size: 90px;
+	}
+	.Buy-btn,.add-cart {
+		font-size: 70px !important;
+	}
+	.buy-option h3 {
+		font-size: 100px !important;
+	}
+}
+
+
+::selection{ /*-----------------selection color---------------*/
+	color: #FFFFFF; /* select the selected text color here*/
+	background-color: #D11316; /* select the selected text background color here*/
+} 
+::-moz-selection { /* this is the same but for mozilla firefox*/
+	color: #FFFFFF;
+	background-color: #D11316;
+}
+body  {
+	overflow-x: hidden;
+}
+
+
+
+/*-----------------Header---------------*/
+
+
+
+.header-overlay{
+	background-color: rgba(0,0,0,0.75);
+	background-size: cover;
+	-moz-background-size:cover;
+	padding-top: 100px;
+	overflow-x: hidden;
+}
+.header {
+	background-image: url(../images/3joiQ9q.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-position: 50% 50%;
+}
+.Titles{
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+	font-weight: 900;
+	color: red;
+	font-size:80px;
+	padding-bottom: 10px;
+	font-family: Geforce;
+}
+.header-container  h2 {
+	color: white !important;
+	font-weight: 300;
+	padding-bottom: 20px;
+}
+.header-container button {
+	color: red;
+	background-color: transparent;
+}
+.Buy-btn {
+	color: red !important;
+	font-size: 30px;
+	font-family: Do Hyeon;
+	border: 2px solid red;
+	border-radius: 10px;
+	padding: 5px 30px 5px ;
+	transition: color 0.4s;
+	transition: background-color 0.4s;
+}
+.Buy-btn:hover,.Buy-btn:focus {
+	background-color: red;
+	color: white!important;
+	outline: 0;
+}
+.add-cart {
+	color: white!important;
+	font-size: 30px;
+	font-family: Do Hyeon;
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 5px 30px 5px ;
+	transition: color 0.4s;
+	transition: background-color 0.4s;
+}
+.buy-option h3{
+	color: white;
+	font-family: Do Hyeon;
+	font-size: 50px;
+}
+.buy-option button,.buy-option h3 {
+	height: 100%;
+	margin-left: 17px;
+}
+.add-cart:hover,.add-cart:focus {
+	background-color: white;
+	color: black!important;
+}
+
+
+
+/*-----------------Navigation---------------*/
+
+
+
+.navbar{
+	-webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+	padding: 7px;
+}
+.navbar-dark {
+	background-color: rgba(0,0,0,0.0);
+}
+.navbar-dark .navbar-nav > li >a {
+	font-family: 'Raleway', cursive;
+	font-size: 25px!important;
+	color: #F10004!important;
+	transition: all 1s!important;
+	padding: 5px;
+}
+.navbar-dark .navbar-nav > li >a>i {
+	padding-top: 12px;
+	width: auto;
+	height: auto;
+	transition: color 200ms;
+}
+.navbar-dark .navbar-nav > li >a>i:hover{
+	color: white !important;
+}
+.navbar-dark .navbar-nav > li > a:hover:not(.shoping-icon),
+.navbar-dark .navbar-nav > li > a:focus:not(.shoping-icon){
+	background-color: #FF0004!important;
+	color: #FFFFFF !important;
+}
+.navbar-brand {
+	color: #F20202!important;
+	font-size: 30px!important;
+	font-family: 'Black Ops One', cursive;
+	transition: all 1s;
+	-moz-transition: all 1s;
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+	background-color: #FF0004!important;
+	color: #FFFFFF!important;
+	-moz-transition: all 1s;
+}
+.slider-nav{
+	padding-top: 20px;
+	margin-bottom: 50px;
+}
+.slider-nav img{
+	padding-top: 0;
+}
+ .slider-for {
+	width: 100% !important;
+	height: 100% !important;
+}
+.slider-for > img {
+	width: 100% !important;
+	height: 100% !important;
+}
+.slick-slide {
+	padding: 0 5px;
+}
+#Searsh-icon{
+	color: red;
+}
+.form-inline{
+	padding-top: 9px;
+}
+#Searsh-bar {
+	border: none;
+	box-shadow: 0 0 0 0 transparent;
+	transition: box-shadow 0.1s;
+}
+#Searsh-bar:focus{
+	box-shadow: 0 0 5px 1px red;
+}
+ .navbar .dropdown {
+	position: static !important;
+}
+ #drop-menu:hover + .dropdown-menu {
+	 margin-top: 0 !important;
+	 display: inline-flex!important;
+}
+.dropdown-menu:hover {
+	margin-top: 0 !important;
+	display: inline-flex!important;
+}
+
+.dropdown-item:hover{
+	background-color: #848484 !important;
+}
+.dropdown-item:focus,.dropdown-item:active{
+	background-color: red !important;
+}
+
+
+
+/*----------------------section-------------------*/
+
+
+
+	font-family: Do Hyeon;
+}
+.section-container img {
+	width: 200%;
+	height: 200%;
+}
+
+
+
+/*-----------------section-w-bk---------------*/
+
+
+
+.section-w-bk-back {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-position: 50% 50%;
+}
+.section-w-bk-overlay{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.75);
+	background-size: cover;
+	-moz-background-size:cover;
+}
+.specifications img{
+	display: block;
+	margin: auto;
+	padding-bottom: 30px;
+}
+.section-w-bk-overlay img {
+	padding-top: 30px;
+}
+.section-w-bk-overlay .specifications-text {
+	margin-right: 15px;
+	background-color: #FFFFFF;
+	padding: 25px;
+}
+.section-w-bk-overlay .section-w-bk-container {
+	padding-bottom: 50px;
+}
+
+
+
+/*-----------footer-------------*/
+
+
+
+footer {
+	border-top: red solid 2px; 
+	padding: 5px;
+	color: #FFFFFF;
+	font-size: 15px;
+	padding-left: 10px;
+	background-color: black;
+}
+
+
+
+/*--------Brands------------*/
+
+
+
+.brands {
+	height: auto;
+	background-color: black;
+}
+.brands img {
+	top: 0;
+	bottom: 0;
+}
+
+
+
+/*-----------------contact-----------*/
+
+
+
+.contact-section {
+	margin-top: 13px;
+}
+
+
+
+/*---------------SVG---------------*/
+
+
+
+.svg-bottom {
+	vertical-align: bottom;
+}
+.svg-top {
+	vertical-align: top;
+}
